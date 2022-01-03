@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* list-style: none; */
+}
+
+/* root variable */
+:root {
+  --color-primary: #699e34;
+  --color-primary-light: #b3d98d;
+  --color-secondary-light: #fff6f2;
+  --color-secondary-dark: #ffa589;
+  --color-navbar: #f8f8f8;
+  --color-headings: #000;
+  --color-body: #333333;
+  --color-white: #fff;
+  --avatar-size: 50px;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.main-header {
+  background-color: var(--color-navbar);
+}
+.nav__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav--block {
+  display: block;
+  padding-right: 2rem;
+}
+.nav > a {
+  text-decoration: none;
+}
+.btn {
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  margin: 0 2rem;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 1.6rem;
+}
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.iconHome {
+  color: var(--color-primary);
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 2rem;
+}
+.hero__section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn--hero {
+  margin-top: 2rem;
+}
