@@ -44,6 +44,16 @@ html {
     text-align: center;
   }
 }
+@media screen and (max-width : 856px) {
+  .info__hero {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 2;
+  }
+  .hero--boxes {
+    margin-bottom: 1rem;
+  }
+}
 
 .container {
   max-width: 1140px;
@@ -107,15 +117,76 @@ html {
 .btn--hero {
   margin-top: 2rem;
 }
-.second__hero {
 
-}
+
 .info__hero{
-  background-color: #ccc;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: #ccc; */
   padding: 1rem 2.5rem;
-  border-radius: 8px;
-  margin: 2rem 2rem;
+  /* border-radius: 8px; */
+  margin: 10rem 2rem;
   text-align: center;
   white-space: nowrap;
   font-size: 1.6rem;
+  width: 95%;
+  height: auto;
+
 }
+.hero--boxes {
+  border: 1px solid #ccc;
+  padding: 1rem 2rem;
+  border-radius:18px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  box-shadow: 1px 1px #ccc;
+  height: 200px;
+  flex-wrap: wrap;
+  white-space: pre-line;
+  width: 300px;
+  
+
+}
+.boxes--flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  overflow-wrap: normal;
+}
+.hero--boxes > h1 {
+  font-size: 1.7rem;
+}
+.hero--boxes > p {
+  font-size: 1.1rem;
+  padding-top: 1.6rem;
+}
+.biography {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rem;
+}
+.biography__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  white-space: normal;
+  text-align: center;
+
+}
+
+.biography__info > h1 {
+  font-size: 3rem;
+  padding-bottom: 3rem;
+}
+.biography__info > p {
+  font-size: 2rem;
+
+}
+
