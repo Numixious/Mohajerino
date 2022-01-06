@@ -37,14 +37,19 @@ html {
     font-size: 3.5rem;
     margin-bottom: 3.5rem;
   }
+ 
 }
 @media screen and (max-width: 1024px) {
   body {
     font-size: 1.6rem;
     text-align: center;
   }
+  p {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
 }
-@media screen and (max-width : 856px) {
+@media screen and (max-width : 900px) {
   .info__hero {
     flex-direction: row;
     flex-wrap: wrap;
@@ -67,7 +72,8 @@ html {
   padding: 1rem 2rem;
   text-decoration: none;
   font-size: 1.6rem;
-  box-shadow: 10px #ccc;
+  box-shadow: 10px #EAEAEA;
+  /* position: sticky; */
 }
 .main-header {
   background-color: var(--color-navbar);
@@ -83,6 +89,12 @@ html {
 }
 .nav > a {
   text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a::after {
+  transition: all 2s ease-in-out;
 }
 .btn {
   cursor: pointer;
@@ -116,6 +128,13 @@ html {
 }
 .btn--hero {
   margin-top: 2rem;
+  
+}
+.btn__bio {
+  text-decoration: none;
+}
+.btn--hero > a {
+  text-decoration: none;
 }
 
 
@@ -170,6 +189,7 @@ html {
   flex-direction: column;
   align-items: center;
   margin-top: 20rem;
+  background-color: #EAEAEA;
 }
 .biography__info {
   display: flex;
@@ -178,15 +198,16 @@ html {
   flex-direction: column;
   white-space: normal;
   text-align: center;
+  width: 80%;
 
 }
 
 .biography__info > h1 {
   font-size: 3rem;
   padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 .biography__info > p {
   font-size: 2rem;
-
 }
 

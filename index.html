@@ -26,7 +26,7 @@
     />
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header" data-aos="fade-down"  data-aos-duration="3000">
       <nav class="nav container">
         <a class="homeBtn" href="#"
           ><i class="fa-solid fa-jet-fighter iconHome"></i
@@ -42,11 +42,11 @@
         </div>
       </nav>
     </header>
-    <section class="hero__section">
+    <section class="hero__section"  data-aos="fade-up"  data-aos-duration="2000">
       <div>
         <p>مهاجرینو</p>
         <p>همیار شما در انتخاب مقصد مهاجرتی شما</p>
-        <div class="btn btn--primary btn--hero">بیوگرافی مهاجرینو</div>
+        <a href="#btn__bio"><div class="btn btn--primary btn--hero">بیوگرافی مهاجرینو</a></div>
       </div>
       <div class="hero__svg">
         <svg
@@ -77,7 +77,7 @@
         </svg>
       </div>
     </section>
-    <section class="second__hero">
+    <section class="second__hero" data-aos="fade-up"  data-aos-duration="2000">
       <div class="info__hero">
         <div class="hero--boxes boxes--flex">
           <h1>انتخاب کشور مناسب شما</h1>
@@ -103,12 +103,16 @@
         </div>
       </div>
     </section>
-    <section class="biography">
+    <section class="biography" id="btn__bio">
       <div class="biography__info">
         <h1>بیوگرافی مهاجرینو</h1>
         <p>مهاجرینو فعالیت خود را در عرصه مشاوره مهاجرت به هموطنان عزیز با هدف اصلی یکسان یا نزدیک بودن شرایط آب و هوایی کشور مقصد به کشور مبدا در سال 1400 آغاز نمود. در کنار اصلی ترین هدف وب سایت مهاجرینو که مقایسه کشور های مبدا و مقصد به لحاظ آب و هوایی میباشد، شما میتوانید با مشاورین ما در ارتباط با اهداف ذکر شده جلسه مشاوره را داشته باشید</p>
+        <div class="btn btn--primary" style="margin: 3rem;">ورود به بخش مشاوره</div>
       </div>
     </section>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
