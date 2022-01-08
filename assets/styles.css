@@ -48,7 +48,7 @@ html {
     margin-bottom: 4rem;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   .info__hero {
     flex-direction: row;
     flex-wrap: wrap;
@@ -223,4 +223,62 @@ a::after {
 }
 .supported__countries__title > h1 {
   font-size: 3rem;
+}
+.comparison {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.comparison > h1 {
+  font-size: 3rem;
+  padding-bottom: 10rem;
+  padding-top: 10rem;
+}
+.comparison__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.comparison__sides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.comparison__input {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.firstComparison {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+}
+.secondComparison {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondComparison > p {
+  padding-right: 2rem;
+}
+.firstComparison > p {
+  padding-left: 2rem;
+}
+.comparison__info > p {
+  padding-bottom: 2rem;
+}
+.comparison__input > form {
+  border-radius: 8px;
+  border: none;
+}
+option {
+  border-radius: 50px;
+}
+.comparison__info .btn {
+  margin-top: 4rem;
 }
