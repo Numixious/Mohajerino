@@ -37,7 +37,6 @@ html {
     font-size: 3.5rem;
     margin-bottom: 3.5rem;
   }
- 
 }
 @media screen and (max-width: 1024px) {
   body {
@@ -49,7 +48,7 @@ html {
     margin-bottom: 4rem;
   }
 }
-@media screen and (max-width : 900px) {
+@media screen and (max-width: 900px) {
   .info__hero {
     flex-direction: row;
     flex-wrap: wrap;
@@ -72,7 +71,7 @@ html {
   padding: 1rem 2rem;
   text-decoration: none;
   font-size: 1.6rem;
-  box-shadow: 10px #EAEAEA;
+  box-shadow: 10px #eaeaea;
   /* position: sticky; */
 }
 .main-header {
@@ -125,10 +124,10 @@ a::after {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  background-image: url(img/Migration.jpg);
 }
 .btn--hero {
   margin-top: 2rem;
-  
 }
 .btn__bio {
   text-decoration: none;
@@ -137,8 +136,7 @@ a::after {
   text-decoration: none;
 }
 
-
-.info__hero{
+.info__hero {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -151,12 +149,16 @@ a::after {
   font-size: 1.6rem;
   width: 95%;
   height: auto;
-
+}
+.hero--boxes:hover {
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .hero--boxes {
   border: 1px solid #ccc;
   padding: 1rem 2rem;
-  border-radius:18px;
+  border-radius: 18px;
   text-align: center;
   white-space: nowrap;
   font-size: 1.6rem;
@@ -165,8 +167,6 @@ a::after {
   flex-wrap: wrap;
   white-space: pre-line;
   width: 300px;
-  
-
 }
 .boxes--flex {
   display: flex;
@@ -189,7 +189,7 @@ a::after {
   flex-direction: column;
   align-items: center;
   margin-top: 20rem;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 .biography__info {
   display: flex;
@@ -199,7 +199,6 @@ a::after {
   white-space: normal;
   text-align: center;
   width: 80%;
-
 }
 
 .biography__info > h1 {
@@ -210,4 +209,18 @@ a::after {
 .biography__info > p {
   font-size: 2rem;
 }
-
+.supported__countries {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20rem;
+}
+.supported__countries__title {
+  font-size: 3rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+.supported__countries__title > h1 {
+  font-size: 3rem;
+}
